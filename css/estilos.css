@@ -1,0 +1,588 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", sans-serif;
+  color: #EFEFEF;
+}
+.home-body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}/*
+estilos barra navegacion 
+*/
+/*.nav {
+    background-color:rgb(38, 169, 167);
+    display: flex;
+    justify-content:space-around;  
+  }*/
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    background-color:#276E90;  
+  }
+ .nav-logo{
+  width: 250px;
+  height: 90px;
+  margin-left: 10px;
+  align-items: center;
+ }
+ .img-logo{
+  width: 250px;
+  height: 90px;
+ }
+ .menu-nav{
+      display: flex;
+      height: 90px;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 50px;
+  }
+  .menu-nav__item{
+      display: inline-block;
+      
+  }
+  .menu-nav__item__separador{
+    display: inline-block;
+  }
+  .menu-nav__item__separador::after{
+   content: "|";
+  }
+
+  .menu-nav__item a{
+      color:rgba(22, 15, 15, 0.756);
+      text-decoration: none !important;
+  } 
+  .menu-nav__item a:hover{
+    color:rgba(235, 244, 246, 0.756);
+  }
+  .menu-nav__item a:active{
+    color: rgb(125, 209, 41);
+  }
+ /*Estilos container de imagen perfil*/ 
+ .container-header{
+  background-image: url(../img/digitization-5140071_1920.jpg);
+    display: flex;
+    justify-content: center;
+    width:100% ;
+    height:480px;
+   
+   
+ }
+ .container-header__Profile{
+    background-color:rgb(7, 12, 12);
+    position: relative;
+    top: 170px;
+    width:300px;
+    height: 280px;
+    border-radius: 20px;
+  }
+  .img-profile{
+   border:10px solid rebeccapurple ;
+   width:200px;
+   height: 280px;
+   border-radius: 100%;
+   position: relative;
+   left:38px;
+   bottom:155px;
+  }
+  .container-header__profile-img{
+    border:#07305e 10px solid ;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+  }
+  .name{
+    
+    position:relative;
+    text-align: center;
+    display:inline;
+    bottom: 150px;
+  }
+  pre{
+   color: rgb(150, 150, 156);
+  }
+ /*
+ Estilos iconos redes sociales foto principal
+ */
+ .container-header__profile-redes{
+  position: relative;
+  bottom:150px ;
+  background-color:rgb(7, 12, 12);
+  width: 100%;
+  height: 50px;
+  display: grid;
+  
+}
+.social-icons {
+  width: 220px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-self: end;
+  margin-right: 50px;
+}
+.social-icons a {
+  color: white;
+  font-size: 28px;
+}
+.social-icons a:hover {
+  color: #2d9ae353;
+}
+/*estilos main info*/
+
+.main-portafolio{
+    text-align:center;
+    justify-content: center;
+    background-color:#0A3143;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 180px 360px ;
+    gap: 30px;
+
+}
+strong {
+  color:#CECFC9;
+  
+}
+
+.main-portafolio__content{
+  display: grid;
+  justify-content: center;
+
+  }
+.main-portafolio__info{
+   margin-top: 60px;
+  width: 100%;
+  height: 300px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.main-portafolio__content a{
+  position: relative;
+  left: 42%;
+  bottom:20px;
+  background-color:#EFEFEF;
+  text-decoration: none;
+  border: solid 1px #ccc ;
+  width: 200px;
+  height: 40px;
+}
+.main-portafolio__info-personal {
+  
+  display:grid;
+  grid-template-rows:20px 20px 20px 20px 20px 20px;
+  justify-content: center;
+  justify-items:center ;
+ 
+  gap:40px;
+    
+ }
+ .main-portafolio__info-principal{
+  display: grid;
+  justify-content: center;
+ }
+.main-portafolio__info-jovis{
+  position:relative;
+  width: 100%;
+  height:200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr;
+  gap: 10px;
+}
+
+.jovis{
+  width:110px;
+  height:80px;
+  padding:16px;
+  display: block;
+  border-radius:10%;
+  
+  background-color:#CECFC9;
+}
+.jovis i{
+  color:#276E90;
+}
+.main-portafolio__info-jovis:hover{
+  color: rgba(8, 8, 8, 0.329);
+}
+/*/
+estilos section de skills
+**/
+.section-skills{
+  text-align: center;
+  justify-content: center;
+  background-color:#335a69;
+  padding-top: 20px;
+  padding-bottom: 20px ;
+  position: relative;
+  
+    
+}
+.container-skills{ 
+  padding-top: 20px;
+  justify-content: center;
+  background:#335a69;
+  width: 100%;
+  height:auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  grid-template-columns:250px 250px 250px 250px  ;
+  
+  align-items:end;
+}
+
+
+.cardSkill{
+  display: grid;
+  grid-template-rows:1fr 3fr 3fr;
+  text-align: center;
+  background-color:#484840;
+  width: 100%;
+  height:280px;
+  border-radius: 20px;
+  
+  
+}
+.techimg-card{
+  padding-top: 30px;
+  width: 250px;
+  height: 200px;
+}
+.img-skill{
+  width:70%;
+  height:80%;
+}
+.cardSkill :hover{
+  color: #05fd50;
+}
+/*estilos section proyectos
+////////////////////////////////*/
+.section-proyects{
+  padding-top: 10px;
+  padding-bottom: 50px;
+  justify-items: center;
+  width: 100%;
+  height:900px;
+  background-color:#6395a8;
+  display:grid;
+}
+.container-proyects{
+ 
+  justify-content: center;
+  width: 100%;
+  height:auto;
+  display:grid;
+  grid-template-rows:380px 300px;
+  gap: 30px;
+  grid-template-columns:360px 360px 360px; 
+  }
+.card-projets{
+  border:solid 1px ;
+  border-radius:10%;
+  width: 100%;
+  height: 370px;
+  justify-items:center; 
+  display: grid;
+  grid-template-rows:50px 250px 20px;
+}
+.card-projets:hover .link-web{
+  visibility: visible;
+  
+}
+.card-projets .link-web{
+  visibility: hidden;
+  position: end;
+  
+}
+.img-proyect{
+  width: 350px;
+  height: 250px;
+}
+.img-pro{
+  width:350px;
+  height: 250px;
+}
+.card-projets a{
+  text-decoration: none;
+  font-size: 35px;
+  color:#CECFC9;
+}
+.card-projets :hover{
+  color: #05fd50;
+}
+/*section form*/
+.section-form{
+  background-color:#0A3143;
+  width: 100%;
+  height: auto;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.titulo-form{
+  text-decoration:underline rgba(164, 162, 162, 0.756);
+  
+}
+.container-form{
+  width: 100%;
+  height: 100%;
+  background-color:darkcyan;
+  padding:10px;
+  text-align: center;
+
+}
+.img-form{
+  width: 100%;
+  height:100%;
+}
+
+
+/*seccion footer*/
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(53, 163, 199);
+  border-top: 35px solid rgb(85, 117, 162);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+/*/RESPONSIVE DISPOSITIVOS MOBILES*/
+@media screen and (max-width:500px){
+ 
+  body {
+    font-family: "Roboto Mono", sans-serif;
+    color: #EFEFEF;
+    font-size:16px;
+  }
+   
+  .header{
+    width:auto;
+  }
+  .header .nav{
+      width:100%;        
+      display: grid;
+      grid-template-columns:100px 260px;  
+      height: auto;
+      align-items: center;      
+  }
+  .header .nav-logo{
+      width: 80px;
+  }
+  .nav-logo .img-logo{
+     width:80px;    
+  }
+  .nav .div-nav{
+      width: 200px;
+      height: auto;
+      display:grid;
+    
+  }
+  .main-portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:auto;
+    height: auto;
+    padding-bottom:30px;
+  }
+  .main-portafolio .main-portafolio__content{
+    display: block;
+    width: 360px;
+            
+    
+  }
+  .main-portafolio .main-portafolio__info  {
+      width: 360px;
+      height: auto;
+      display:grid;
+      grid-template-columns:1fr;       
+      justify-content: center;
+  }
+  .main-portafolio__content a{
+    text-decoration: none;    
+    position: relative;
+    width:auto;
+    left: 120px;
+    bottom:40px;
+  }
+  
+  .main-portafolio .main-portafolio__info-personal{
+    display:block;
+    width: auto;
+  }
+  .main-portafolio__info .main-portafolio__info-principal{
+    width: auto;
+    height: auto;
+  }
+  .main-portafolio__info-principal .main-portafolio__info-jovis{
+    width:auto;
+    height: auto;   
+    display:grid;    
+    grid-template-columns:1fr 1fr 1fr ;
+  }
+  
+  
+  .section-skills .container-skills{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;   
+    } 
+    .container-skills .cardSkill{
+      justify-content: center;
+      align-items: center;
+      
+    } 
+  .section-proyects{
+    width: auto;
+    height: auto;
+  }
+  .section-proyects .container-proyects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;   
+    width:auto;
+    height: auto;
+}
+}
+@media screen and  (min-width: 500px) and (max-width: 1180px) {
+ 
+  body {
+    font-family: "Roboto Mono", sans-serif;
+    color: #EFEFEF;
+    font-size:16px;
+  }
+   
+  .header{
+    width:auto;
+  }
+  .header .nav{
+      width:100%;        
+      display: grid;
+      grid-template-columns:1fr 1fr ;  
+      height: auto;
+      align-items: center;      
+  }
+  .header .nav-logo{
+      width: 120px;
+  }
+  .nav-logo .img-logo{
+     width:120px;    
+  }
+  .nav .div-nav{
+      width: 300px;
+      height: auto;
+      display:grid;
+    
+  }
+  .main-portafolio{
+    display: grid ;
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
+  }
+  .main-portafolio__content {
+    display: grid;
+    grid-template-columns:1fr;  
+    gap: 10px;
+    width:auto;
+    height: auto;
+    align-items: center;
+   
+  }
+  .main-portafolio__content a{
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    left: 70px;
+    bottom:90px;
+    
+   
+  }
+  
+  .main-portafolio .main-portafolio__info  {
+      display:grid;
+      grid-template-columns:1fr 1fr;       
+  }
+  
+  
+  .main-portafolio .main-portafolio__info-personal{
+    display:block;
+    width: auto;
+    height:auto;
+  }
+  .main-portafolio__info .main-portafolio__info-principal{
+    width: auto;
+    height: auto;
+  }
+  .main-portafolio__info-principal .main-portafolio__info-jovis{
+    width:auto;
+    height: auto;   
+    display:grid;    
+    grid-template-columns:1fr 1fr  ;
+  }
+  
+  
+  .section-skills .container-skills{
+    width: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;   
+    } 
+    .container-skills .cardSkill{
+      width: auto;
+
+      justify-content: center;
+      align-items: center;
+      
+    } 
+    .section-proyects{
+     display:grid;
+     grid-template-columns: 1fr;
+     width: auto;
+     height:auto;
+    }
+    
+  .section-proyects .container-proyects{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr;
+    gap: 10px;   
+    width:auto;
+    height: auto;
+}
+.container-proyects .card-projets{
+width:230px;
+justify-content: center;
+}
+.card-projets .img-proyect{
+  width: 230px;
+}
+.img-proyect .img-pro{
+  width:230px;
+}
+}
